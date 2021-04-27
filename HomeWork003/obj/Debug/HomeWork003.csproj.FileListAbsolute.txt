@@ -1,0 +1,7 @@
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\bin\Debug\HomeWork003.exe.config
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\bin\Debug\HomeWork003.exe
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\bin\Debug\HomeWork003.pdb
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\obj\Debug\HomeWork003.csprojAssemblyReference.cache
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\obj\Debug\HomeWork003.csproj.CoreCompileInputs.cache
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\obj\Debug\HomeWork003.exe
+C:\Users\ameny\Desktop\SkillBox\HomeWork003\obj\Debug\HomeWork003.pdb
