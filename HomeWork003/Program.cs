@@ -14,7 +14,7 @@ namespace HomeWork003
                 string Text = "Игра доберись до нуля.\nПравила: игроки ходят по очереди " +
     "<<отнимая>> от загаданного числа числа от одного до четырёх." +
     "\nПобедит игрок после хода которого загаданное число станет нулём.\n" +
-    "\nВыберите режим игры: \n\n<1> Игра вдвоём   \n<2> Игра с несколькими игроками и настройками сложности  \n<3> Игра с компьютером";
+    "\nВыберите режим игры: \n\n<1> Игра с несколькими игроками и настройками сложности  \n<2> Игра с компьютером";
                 string[] lines = Regex.Split(Text, "\r\n|\r|\n");
                 int top = 0;
                 int center = Console.WindowWidth / 2;
@@ -27,60 +27,8 @@ namespace HomeWork003
                 }
                 bool playerTurn = true;
                 var gameMode = Console.ReadLine();
+                
                 if (gameMode == "1")
-                {
-                    Console.Write($"Введите имя первого игрока : ");
-                    string playerName_1 = Console.ReadLine();
-                    Console.Write($"Введите имя второго игрока : ");
-                    string playerName_2 = Console.ReadLine();
-                    //загадывается число
-                    int gameNumber = rand.Next(11, 121);
-                    while (gameNumber > 0)  // запуск цикла угадываний
-                    {
-                        Console.WriteLine($"\nТекущее число: {gameNumber}");
-                        bool requestInput = true;
-                        while (requestInput)
-                        {
-                            string currentPlayer = playerTurn ? playerName_1 : playerName_2;
-                            Console.Write($"Ваш ход {currentPlayer}: ");
-                            int userTry = int.Parse(Console.ReadLine());
-                            if (userTry < 1 || userTry > 4)
-                            {
-                                Console.WriteLine($"Некорректный ход! Только число от 1 до 4!");
-                            }
-                            else
-                            {
-                                requestInput = false;
-                                gameNumber -= userTry;
-                                if (gameNumber == 0)
-                                {
-                                    string winner = playerTurn ? playerName_1 : playerName_2;
-                                    Console.WriteLine($"Победил {winner}!");
-                                    Console.ReadLine();
-                                    Console.WriteLine("Нажмите 5 для перезапуска игры или любую другую кнопку для завершения игры.");
-                                    if (Console.ReadLine() == "5")
-                                    {
-                                        Console.Clear();
-                                        continue;
-                                    }
-                                    else
-                                    {
-                                        return;
-                                    }
-                                }
-                                else if (gameNumber < 0)
-                                {
-                                    Console.WriteLine($"\nНедопустимый ход.\nПереход хода.");
-                                    Console.ReadLine();
-                                    gameNumber += userTry;
-                                }
-                            }
-                            // переключение хода между игроками
-                            playerTurn = !playerTurn;
-                        }
-                    }
-                }
-                else if (gameMode == "2")
                 {
                     //настройки игры                
                     Console.WriteLine("\nВыберете пределы загадываемого числа");
@@ -140,12 +88,10 @@ namespace HomeWork003
                         return;
                     }
                 }
-                else if (gameMode == "3")
+                else if (gameMode == "2")
                 {
                     //загадывается число
-                    int gameNumber = rand.Next(11, 121);
-                    Console.Write($"\nВведите ваше имя : ");
-                    string playerName = Console.ReadLine();
+                    int gameNumber = rand.Next(11, 121);                                      
                     bool playerTurn2 = true;
                     while (gameNumber > 0)
                     {
@@ -156,7 +102,7 @@ namespace HomeWork003
                             bool requestInput = true;
                             while (requestInput)
                             {
-                                Console.Write($"Ваш ход {playerName}: ");
+                                Console.Write($"Ваш ход: ");
                                 int userTry = int.Parse(Console.ReadLine());
                                 if (userTry < 1 || userTry > 4)
                                 {
@@ -185,7 +131,7 @@ namespace HomeWork003
                     // победа если дошли до нуля и ничья если ушли в минус..
                     if (gameNumber == 0)
                     {
-                        string winner = playerTurn2 ? "Компьютер" : playerName;
+                        string winner = playerTurn2 ? "Компьютер" : "Игрок";
                         Console.WriteLine($"\nПобедил {winner} !!!\n");
                     }
                     else if (gameNumber < 0)
