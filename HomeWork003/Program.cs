@@ -76,7 +76,7 @@ namespace HomeWork003
                             {
                                 compTry = gameNumber;
                             }
-                            gameNumber -= compTry;
+                            gameNumber -= compTry;                            
                         }
                         // победа если дошли до нуля и ничья если ушли в минус..                    
                         if (gameNumber == 0)
