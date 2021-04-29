@@ -63,32 +63,32 @@ namespace HomeWork003
                             requestInput = userTry < inputMin || userTry > inputMax;
                             if (requestInput)
                                 Console.WriteLine($"Некорректный ход! Только число от {inputMin} до {inputMax}!\n");
+
                         }
                         while (requestInput);
                         gameNumber -= userTry;
-
                         if (flag >= 1 && playersCount == i + 1)
                         {
                             Console.WriteLine($"\nТекущее число: {gameNumber}");
                             compTry = rand.Next(inputMin, inputMax + 1);
-                            Console.WriteLine($"Ход компьютера: {compTry}");
-                            if (gameNumber <= 4)
+                            if (gameNumber <= inputMax + 1)
                             {
                                 compTry = gameNumber;
                             }
-                            gameNumber -= compTry;                            
+                            Console.WriteLine($"Ход компьютера: {compTry}");
+                            gameNumber -= compTry;
                         }
-                        // победа если дошли до нуля и ничья если ушли в минус..                    
                         if (gameNumber == 0)
                         {
                             Console.WriteLine($"\n Победа игрока {i + 1} \n");
                             break;
                         }
-                        else if (gameNumber < 0)
+                        if (gameNumber < 0)
                         {
                             Console.WriteLine($"\nНичья, сыграйте ещё раз.\n");
                             break;
                         }
+                        // победа если дошли до нуля и ничья если ушли в минус.. 
                     }
                 }
                 Console.WriteLine("Нажмите 5 для перезапуска игры или любую другую кнопку для завершения игры.");
