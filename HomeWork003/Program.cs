@@ -50,6 +50,7 @@ namespace HomeWork003
                 // запуск цикла угадываний 
                 while (gameNumber > 0)
                 {
+                    //ход игрока(ов)
                     for (var i = 0; i < playersCount; i++)
                     {
                         Console.WriteLine($"\nТекущее число: {gameNumber}");
@@ -67,17 +68,25 @@ namespace HomeWork003
                         }
                         while (requestInput);
                         gameNumber -= userTry;
+                        //ход компьютера
                         if (flag >= 1 && playersCount == i + 1)
                         {
                             Console.WriteLine($"\nТекущее число: {gameNumber}");
                             compTry = rand.Next(inputMin, inputMax + 1);
-                            if (gameNumber <= inputMax + 1)
+                            if (gameNumber <= inputMax)
                             {
                                 compTry = gameNumber;
                             }
                             Console.WriteLine($"Ход компьютера: {compTry}");
                             gameNumber -= compTry;
+                            if (gameNumber == 0)
+                            {
+                                Console.WriteLine("Победил компьютер!");
+                                Console.ReadLine();
+                                continue;
+                            }
                         }
+                        // победа если дошли до нуля и ничья если ушли в минус..
                         if (gameNumber == 0)
                         {
                             Console.WriteLine($"\n Победа игрока {i + 1} \n");
@@ -88,7 +97,6 @@ namespace HomeWork003
                             Console.WriteLine($"\nНичья, сыграйте ещё раз.\n");
                             break;
                         }
-                        // победа если дошли до нуля и ничья если ушли в минус.. 
                     }
                 }
                 Console.WriteLine("Нажмите 5 для перезапуска игры или любую другую кнопку для завершения игры.");
