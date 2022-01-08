@@ -12,3 +12,11 @@ C:\Users\ameny\Documents\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.cspro
 C:\Users\ameny\Documents\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.csproj.CoreCompileInputs.cache
 C:\Users\ameny\Documents\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.exe
 C:\Users\ameny\Documents\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.pdb
+E:\GitHub\skillbox\HomeWork003\bin\Debug\HomeWork003.exe.config
+E:\GitHub\skillbox\HomeWork003\bin\Debug\HomeWork003.exe
+E:\GitHub\skillbox\HomeWork003\bin\Debug\HomeWork003.pdb
+E:\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.csproj.AssemblyReference.cache
+E:\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.csproj.SuggestedBindingRedirects.cache
+E:\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.csproj.CoreCompileInputs.cache
+E:\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.exe
+E:\GitHub\skillbox\HomeWork003\obj\Debug\HomeWork003.pdb

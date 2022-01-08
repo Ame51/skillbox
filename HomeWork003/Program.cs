@@ -31,14 +31,13 @@ namespace HomeWork003
                 int flag = 0;
                 bool isCompToPlay = true;
                 string currentPlayer = "";
-                int userTry = 0;
                 Random r = new Random();
 
-                //настройки игры                    
-                //if (Console.ReadLine() == "1")
-                //{
-                //    flag++;
-                //}
+                //настройки игры
+                if (Console.ReadLine() == "1")
+                {
+                    flag++;
+                }
 
                 Console.WriteLine("\nВыберете пределы загадываемого числа");
                 Console.WriteLine("\nМинимальное: ");
@@ -73,62 +72,12 @@ namespace HomeWork003
                 Console.WriteLine("Введите имя 4-го игрока:");
                 var name4 = Console.ReadLine();
 
-                var name0 = "Компьютер";
+                var name5 = "Компьютер";
 
                 Console.WriteLine("\nНачали!");
                 // запуск цикла угадываний 
                 while (gameNumber > 0)
                 {
-                    #region
-                    ////ход игрока(ов)
-                    //for (var i = 0; i < playersCount; i++)
-                    //{
-                    //    Console.WriteLine($"\nТекущее число: {gameNumber}");
-                    //    Console.Write($"Ход игрока {i + 1} : ");
-                    //    int userTry;
-                    //    int compTry;
-                    //    bool requestInput;
-                    //    do
-                    //    {
-                    //        userTry = int.Parse(Console.ReadLine());
-                    //        requestInput = userTry < inputMin || userTry > inputMax;
-                    //        if (requestInput)
-                    //            Console.WriteLine($"Некорректный ход! Только число от {inputMin} до {inputMax}!\n");
-
-                    //    }
-                    //    while (requestInput);
-                    //    gameNumber -= userTry;
-                    //    //ход компьютера
-                    //    if (flag >= 1 && playersCount == i + 1)
-                    //    {
-                    //        Console.WriteLine($"\nТекущее число: {gameNumber}");
-                    //        compTry = rand.Next(inputMin, inputMax + 1);
-                    //        if (gameNumber <= inputMax)
-                    //        {
-                    //            compTry = gameNumber;
-                    //        }
-                    //        Console.WriteLine($"Ход компьютера: {compTry}");
-                    //        gameNumber -= compTry;
-                    //        if (gameNumber == 0)
-                    //        {
-                    //            Console.WriteLine("Победил компьютер!");
-                    //            Console.ReadLine();
-                    //            continue;
-                    //        }
-                    //    }
-                    //    // победа если дошли до нуля и ничья если ушли в минус..
-                    //    if (gameNumber == 0)
-                    //    {
-                    //        Console.WriteLine($"\n Победа игрока {i + 1} \n");
-                    //        break;
-                    //    }
-                    //    if (gameNumber < 0)
-                    //    {
-                    //        Console.WriteLine($"\nНичья, сыграйте ещё раз.\n");
-                    //        break;
-                    //    }
-                    //}
-                    #endregion
                     for (; ; )
                     {
                         Console.WriteLine($"Игровое число: {gameNumber}");
@@ -149,7 +98,7 @@ namespace HomeWork003
                         switch (flag)
                         {
                             case 0:
-                                currentPlayer = name0;
+                                currentPlayer = name5;
                                 break;
                             case 1:
                                 currentPlayer = name1;
@@ -167,9 +116,10 @@ namespace HomeWork003
 
                         Console.Write($"Ходит: {currentPlayer}: ");
 
+                        int userTry;
                         if (flag == 0)
                         {
-                            userTry = r.Next(1, 5);
+                            userTry = r.Next(inputMin, inputMax);
                             Console.WriteLine($"{userTry}");
                         }
 
