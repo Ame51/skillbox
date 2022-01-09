@@ -11,13 +11,13 @@ namespace HomeWork003
         static void Main(string[] args)
         {
             #region Задание 1
-            //Console.WriteLine("Введите целое число: ");
-            //int number = int.Parse(Console.ReadLine());
-            //if (number % 2 == 0)
-            //    Console.WriteLine("Число чётное");
-            //else
-            //    Console.WriteLine("Число нечётное");
-            //Console.ReadLine();
+            Console.WriteLine("Введите целое число: ");
+            int number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+                Console.WriteLine("Число чётное");
+            else
+                Console.WriteLine("Число нечётное");
+            Console.ReadLine();
             #endregion
             #region Задание 2
             //Console.WriteLine("Здравствуйте. Введи количество карт на руке: ");
@@ -103,26 +103,26 @@ namespace HomeWork003
 
             #endregion
             #region Задание 3
-            bool prost = true;
-            Console.WriteLine("Введите число\n");
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 2; i <= n / 2; i++)
-            {
-                if (n % i == 0)
-                {
-                    prost = false;
-                    break;
-                }
-            }
-            if (prost)
-            {
-                Console.WriteLine("Число простое");
-            }
-            else
-            {
-                Console.WriteLine("Число не простое");
-            }
-            Console.ReadKey();
+            //bool simple = true;
+            //Console.WriteLine("Введите число\n");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int i = 2; i <= n / 2; i++)
+            //{
+            //    if (n % i == 0)
+            //    {
+            //        simple = false;
+            //        break;
+            //    }
+            //}
+            //if (simple)
+            //{
+            //    Console.WriteLine("Число простое");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Число не простое");
+            //}
+            //Console.ReadKey();
             #endregion
         }
     }
