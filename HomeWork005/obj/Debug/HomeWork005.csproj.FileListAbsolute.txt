@@ -1,0 +1,8 @@
+E:\GitHub\skillbox\HomeWork005\bin\Debug\HomeWork005.exe.config
+E:\GitHub\skillbox\HomeWork005\bin\Debug\HomeWork005.exe
+E:\GitHub\skillbox\HomeWork005\bin\Debug\HomeWork005.pdb
+E:\GitHub\skillbox\HomeWork005\obj\Debug\HomeWork005.csproj.AssemblyReference.cache
+E:\GitHub\skillbox\HomeWork005\obj\Debug\HomeWork005.csproj.SuggestedBindingRedirects.cache
+E:\GitHub\skillbox\HomeWork005\obj\Debug\HomeWork005.csproj.CoreCompileInputs.cache
+E:\GitHub\skillbox\HomeWork005\obj\Debug\HomeWork005.exe
+E:\GitHub\skillbox\HomeWork005\obj\Debug\HomeWork005.pdb
