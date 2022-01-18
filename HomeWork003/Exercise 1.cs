@@ -11,13 +11,13 @@ namespace HomeWork003
         static void Main(string[] args)
         {
             #region Задание 1
-            Console.WriteLine("Введите целое число: ");
-            int number = int.Parse(Console.ReadLine());
-            if (number % 2 == 0)
-                Console.WriteLine("Число чётное");
-            else
-                Console.WriteLine("Число нечётное");
-            Console.ReadLine();
+            //Console.WriteLine("Введите целое число: ");
+            //int number = int.Parse(Console.ReadLine());
+            //if (number % 2 == 0)
+            //    Console.WriteLine("Число чётное");
+            //else
+            //    Console.WriteLine("Число нечётное");
+            //Console.ReadLine();
             #endregion
             #region Задание 2
             //Console.WriteLine("Здравствуйте. Введи количество карт на руке: ");

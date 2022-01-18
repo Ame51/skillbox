@@ -52,9 +52,9 @@ namespace HomeWork004
             //    matrix[i] = int.Parse(Console.ReadLine());
             //}
 
-            //for (int j=0; j<matrix.Length;j++)
+            //for (int j = 0; j < matrix.Length; j++)
             //{
-            //    if (matrix[j]<min)
+            //    if (matrix[j] < min)
             //    {
             //        min = matrix[j];
             //    }
@@ -65,45 +65,45 @@ namespace HomeWork004
             #endregion
             #region Задание 3            
 
-            int x = 0;
-            Console.Write("Введите максимальное число диапазона: ");
-            int y = int.Parse(Console.ReadLine());
+            //int x = 0;
+            //Console.Write("Введите максимальное число диапазона: ");
+            //int y = int.Parse(Console.ReadLine());
 
-            Random rand = new Random();
+            //Random rand = new Random();
 
-            int A = rand.Next(x, y);
-            while (true)
-            {
-                Console.WriteLine("Введите число");
+            //int A = rand.Next(x, y);
+            //while (true)
+            //{
+            //    Console.WriteLine("Введите число");
 
-                string B = (Console.ReadLine());
+            //    string B = (Console.ReadLine());
 
-                if (String.IsNullOrEmpty(B))
-                {
-                    Console.WriteLine($"Загаданное число {A}!\n Удачи в следующий раз.");
+            //    if (String.IsNullOrEmpty(B))
+            //    {
+            //        Console.WriteLine($"Загаданное число {A}!\n Удачи в следующий раз.");
 
-                    break;
-                }
+            //        break;
+            //    }
 
-                else if (Convert.ToInt32(B) > A)
-                {
-                    Console.WriteLine("Загаданное число меньше, продолжайте");
-                }
+            //    else if (Convert.ToInt32(B) > A)
+            //    {
+            //        Console.WriteLine("Загаданное число меньше, продолжайте");
+            //    }
 
-                else if (Convert.ToInt32(B) < A)
-                {
-                    Console.WriteLine("Загаданное число больше, продолжайте");
-                }
+            //    else if (Convert.ToInt32(B) < A)
+            //    {
+            //        Console.WriteLine("Загаданное число больше, продолжайте");
+            //    }
 
-                else if (Convert.ToInt32(B) == A)
-                {
-                    Console.WriteLine("Вы угадали!");
+            //    else if (Convert.ToInt32(B) == A)
+            //    {
+            //        Console.WriteLine("Вы угадали!");
 
-                    break;
-                }
-            }
+            //        break;
+            //    }
+            //}
 
-            Console.ReadLine();
+            //Console.ReadLine();
             #endregion
         }
     }
